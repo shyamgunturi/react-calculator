@@ -1,0 +1,82 @@
+/* Modern styling for the calculator */
+body {
+  background-color: #f4f4f9;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.calculator {
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 320px;
+}
+
+.display {
+  background-color: #1e1e24;
+  color: white;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  background-color: #44475a;
+  border: none;
+  padding: 20px;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #6272a4;
+}
+
+.clear {
+  background-color: #ff5555;
+}
+
+.clear:hover {
+  background-color: #ff6e6e;
+}
+
+button.span-2 {
+  grid-column: span 2;
+}
+
+button:last-child {
+  background-color: #50fa7b;
+}
+
+button:last-child:hover {
+  background-color: #64ff91;
+}
+
